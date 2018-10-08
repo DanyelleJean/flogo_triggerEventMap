@@ -1,4 +1,4 @@
-package triggerScribeEventMap
+package flogo_triggerEventMap
 
 import (
 	"io/ioutil"

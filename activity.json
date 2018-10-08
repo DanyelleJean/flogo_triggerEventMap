@@ -1,5 +1,5 @@
 {
-  "name": "triggerScribeEventMap",
+  "name": "flogo_triggerEventMap",
   "version": "0.0.1",
   "type": "flogo:activity",
   "ref":"https://github.com/DanyelleJean/flogo_triggerEventMap",
