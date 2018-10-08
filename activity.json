@@ -2,11 +2,16 @@
   "name": "triggerScribeEventMap",
   "version": "0.0.1",
   "type": "flogo:activity",
+  "ref":"https://github.com/DanyelleJean/flogo_triggerEventMap",
   "description": "activity description",
   "author": "Your Name <you.name@example.org>",
   "inputs":[
     {
-      "name": "input",
+      "name": "mapUrl",
+      "type": "string"
+    },
+    {
+      "name": "valueList",
       "type": "string"
     }
   ],
