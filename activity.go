@@ -25,12 +25,12 @@ func (a *MyActivity) Metadata() *activity.Metadata {
 
 // Eval implements activity.Activity.Eval
 func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
-	strMapUrl = context.GetInput("mapUrl").(string)
+	 strMapUrl := context.GetInput("mapUrl").(string)
 	strValueList := context.GetInput("valueList").(string)
 	values := strings.Split(strValueList, ",")
-	var responses [len(values)]object
+	responses := make([]*http.Response,len(values))
 
-	for index; index < len(values);index++  {
+	for index := 0; index < len(values);index++  {
 		strRequestPayload := map[string]interface{}{"value":strValueList,}
 		payloadAsBytes, error := json.Marshal(strRequestPayload)
 
